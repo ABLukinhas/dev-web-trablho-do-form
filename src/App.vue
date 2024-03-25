@@ -18,10 +18,10 @@ const pessoa = ref({
 </script>
  
 <template>
-    <div class="conteiner">
+    <div class="">
         <div>
             <label for="">nome</label>
-            <input type="text" v-model="name"  id="">
+            <input type="text" v-model="nome"  id="">
         </div>
         <div>
             <label for="">sobrenome</label>
@@ -29,7 +29,7 @@ const pessoa = ref({
         </div>
         <div>
             <label for="">email</label>
-            <input type="text" v-model="email">
+            <input type="email" v-model="email">
         </div>
         <div>
             <label for="">senha</label>
@@ -40,8 +40,11 @@ const pessoa = ref({
             <input type="date" v-model="datanascimento">
         </div>   
         <div>
-            <label for="">hobbies</label>
-            <input type="#" v-model="hobbies">
+            <input type="radio" v-model="hobbies">
+            <label for="">esportes</label>
+            <label for="">musicas</label>
+            <label for="">viagens</label>
+
         </div>
         <div>
             <label for="">preferencia de linguagem</label>
@@ -49,3 +52,11 @@ const pessoa = ref({
         </div>
     </div>
 </template>
+
+<style>
+.container{
+    display: flex;
+    column-gap: 2rem;
+    flex-direction: row;
+}
+</style>
